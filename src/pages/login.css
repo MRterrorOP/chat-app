@@ -1,0 +1,63 @@
+#login-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-main h1 {
+    font-size: 40px;
+    line-height: 12px;
+}
+
+#login-main button {
+    width: 220px;
+    margin-top: 20px;
+    transition: all 1s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: #000;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 18px;
+    border: solid 3px #6e6e6e;
+    padding: 10px 20px;
+    box-shadow: 0px 5px 8px #1a1a1a;
+    justify-content: center;
+}
+
+#login-main button:hover {
+    box-shadow: 0px 5px 25px #1a1a1a;
+}
+
+#login-main svg {
+    margin-right: 10px;
+    height: 20px;
+    width: auto;
+}
+
+#login-main p {
+    width: 230px;
+    text-align: center;
+}
+
+#login-main #buttons {
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+}
+
+#login-main #button-disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+    color: #575757;
+}
+
+@media screen and (max-width: 480px) {
+    #login-main button {
+        padding: 10px 11px;
+        width: 200px;
+    }
+}
