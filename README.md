@@ -1,8 +1,29 @@
-# React + Vite
+# Chatar, A Fast 🚀, Safe and Secure 🔑 chat app made in React and Firebase.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hello 👋 and welcome to bulding Chatar journey!
 
-Currently, two official plugins are available:
+Used thing in this project 📜 :
+- [Vite JS](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [Firebase](https://firebase.google.com/) - Make your app the
+best it can be
+- [React JS](https://react.dev/) - The library for web and native user interfaces  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**I am gona add more in future**
+- --
+
+## Like to contribut? ✌️
+
+### Follow the commands.
+
+1. But first you have to clone the repo
+- ```git clone https://github.com/aiamanme/chatar.git```
+
+2. Secound install all node modules.
+- ```pnpm install```  
+
+All done 🤔?  
+Then just make you changes ✍️ and create pull request!  
+
+---
+
+Made with ❤️, ✨ and [@aiamanme](https://github.com/aiamanme)
