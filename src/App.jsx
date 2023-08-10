@@ -1,21 +1,25 @@
-import './App.css'
-import Login from "./pages/login"
-import Chat from "./pages/chat"
-import { useState, useEffect } from 'react'
+import Login from "./pages/login";
+import Chat from "./pages/chat";
+import { useState, useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "./config/firebase";
 
 function App() {
-  
-  const [isLogin, setIsLogin] = useState(JSON.parse(localStorage.getItem('isLogin')))
+  const [userData, setUserData] = useState(null);
+  const [isLogin, setIsLogin] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('isLogin', JSON.stringify(isLogin));
-  }, [isLogin]);
-  
-  return (
-    <>
-      { isLogin ? <Chat/> : <Login setIsLogin={setIsLogin} /> }
-    </>
-  )
+    onAuthStateChanged(auth, (tempUser) => {
+      if (tempUser) {
+        setIsLogin(true);
+        setUserData(tempUser);
+      } else {
+        setIsLogin(false);
+      }
+    });
+  }, []);
+
+  return <>{isLogin ? <Chat userData={userData} /> : <Login />}</>;
 }
 
-export default App
+export default App;
