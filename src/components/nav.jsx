@@ -25,7 +25,7 @@ const NavBar = ({ userData }) => {
           </h1>
         </div>
         <div id="rightNav">
-          <button className="px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#654198] rounded-full hover:bg-[#a45c8c] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+          <button className="px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#654198] rounded-full hover:bg-[#8c5ad1] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

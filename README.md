@@ -6,7 +6,9 @@ Used thing in this project 📜 :
 - [Vite JS](https://vitejs.dev/) - Next Generation Frontend Tooling
 - [Firebase](https://firebase.google.com/) - Make your app the
 best it can be
-- [React JS](https://react.dev/) - The library for web and native user interfaces  
+- [React JS](https://react.dev/) - The library for web and native user interfaces 
+- [Tailwind](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
+- [Meraki UI](https://merakiui.com/) - Build your websites with elegant, modern, and customizable UI components.
 
 **I am gona add more in future**
 - --
