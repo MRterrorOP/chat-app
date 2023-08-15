@@ -1,4 +1,4 @@
-# Chatar, A Fast 🚀, Safe and Secure 🔑 chat app made in React and Firebase.
+# A Fast 🚀, Safe and Secure 🔑 chat app made in React and Firebase.
 
 Hello 👋 and welcome to bulding Chatar journey!
 
