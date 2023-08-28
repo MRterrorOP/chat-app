@@ -25,7 +25,7 @@ best it can be
   VITE_FIREBASE_CONFIG='{"apiKey":"","authDomain":"","databaseURL":"","projectId":"","storageBucket":"","messagingSenderId":"","appId":"","measurementId":""}'
   ```
 
-2. Secound install all node modules.
+3. Secound install all node modules.
 - ```pnpm install```  
 
 All done 🤔?  
