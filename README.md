@@ -20,7 +20,12 @@ best it can be
 1. But first you have to clone the repo
 - ```git clone https://github.com/aiamanme/chatar.git```
 
-2. Secound install all node modules.
+2. Add env file in project :
+- ```
+  VITE_FIREBASE_CONFIG='{"apiKey":"","authDomain":"","databaseURL":"","projectId":"","storageBucket":"","messagingSenderId":"","appId":"","measurementId":""}'
+  ```
+
+3. Secound install all node modules.
 - ```pnpm install```  
 
 All done 🤔?  
