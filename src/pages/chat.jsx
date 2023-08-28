@@ -18,6 +18,7 @@ const Chat = ({ userData }) => {
       await addDoc(collection(db, "messages"), {
         text: messageText,
         photo: userData.photoURL,
+        name: userData.displayName,
         timestamp: new Date(),
       });
     }
@@ -30,10 +31,28 @@ const Chat = ({ userData }) => {
     snapshot.forEach((doc) => {
       const message = doc.data();
       const mainMessageDiv = document.createElement("div");
+      mainMessageDiv.classList.add(
+        message.name == userData.displayName,
+        "flex",
+        "m-10"
+      );
+
       const userPhoto = document.createElement("img");
-      userPhoto.src = userData.photoURL;
-      chatMessages.appendChild(userPhoto);
-      mainMessageDiv.textContent = message.text;
+      userPhoto.src = message.photo;
+      mainMessageDiv.appendChild(userPhoto);
+
+      const userNameAndMassage = document.createElement("div");
+
+      const massageText = document.createElement("p");
+      massageText.innerText = message.text;
+      userNameAndMassage.appendChild(massageText);
+
+      const userName = document.createElement("h5");
+      userName.innerText = message.name;
+      userNameAndMassage.appendChild(userName);
+
+      mainMessageDiv.appendChild(userNameAndMassage);
+
       chatMessages.appendChild(mainMessageDiv);
     });
   });
@@ -41,7 +60,7 @@ const Chat = ({ userData }) => {
   return (
     <>
       <NavBar userData={userData} />
-      <div id="massages"></div>
+      <div id="massages" className="max-h-96 overflow-auto"></div>
       <form onSubmit={handelsubmit}>
         <input
           type="text"

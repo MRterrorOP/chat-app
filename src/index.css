@@ -6,3 +6,7 @@ body {
     background-color: rgb(30, 31, 36);
     color: white;
 }
+
+.true {
+    justify-content: right;
+}
